@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>Online Portfolio - Diana Dobrescu</title>
         <!-- Font Awesome icons (free version)-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -42,7 +42,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Unity Developer - Computer Science Student </p>
+                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Computer Science Student at The University of Manchester</p>
             </div>
         </header>
         <section class="page-section portfolio" id="portfolio">
@@ -60,6 +60,20 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Items-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/ProcGen.JPG" alt="ProcGen"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/ParticleSystem.JPG" alt="Particle System"/>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -84,7 +98,79 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Modal-->
+        <!-- Projects-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Procedural Generation in 2D Video Games</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        I have structured my third year project (bachelor thesis) as an exploration of procedural generation techniques in game development.
+                                        The project was focused on creating and documenting a 2D role-playing game using several procedural generation techniques for level generation.
+                                        I have used constructive methods such as Cellular Automata, Grammars and Agent-based generation.
+                                        The project report can be accessed <a href="https://drive.google.com/drive/folders/1bXSxn19_r5ls9hdMVGIEkBqHyqBGIHEK"> <b> here </b> </a>.
+
+                                        The resulting game can be accessed at <a href="https://dianalina99.itch.io/procedural-generation-in-2d-games"> <b> here </b> </a>, using password "dianathirdyearproject".
+
+                                        <iframe src="https://drive.google.com/file/d/1UZ0BUzc0tv9ectWyrIgdCmWQhhdaXGJo/preview" width="800" height="480"></iframe>
+                                    </p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Particle System Simulation</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        This project was part of the third year "Advanced Computer Graphics" course at the University of Manchester.
+                                        I have chosen to model a fire as a particle system, using C++. The open-source library of choice was <a href="https://www.sfml-dev.org/"> <b> SFML </b> </a>, which was used for generating 2D graphics.
+
+                                        <video width="320" height="240" controls>
+                                        <source src="assets/video/ParticleSystem.mp4" type="video/mp4">
+
+                                        Your browser does not support the video tag.
+                                        </video>
+                                    </p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -103,19 +189,19 @@
                                     </div>
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/Exploit.PNG" alt="Exploit - Unity Strategy Platformer"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">"Exploit" is the first 2D strategy game developed by the <a href="https://gamedev.unicsmcr.com/"> UniCS GameDev Society</a>. I contributed to the first stage of development as an Unity C# Programmer. 
+                                    <p class="mb-5">"Exploit" is the first 2D strategy game developed by the <a href="https://gamedev.unicsmcr.com/"> UniCS GameDev Society</a>. I contributed to the first stage of development as an Unity C# Programmer.
                                                     We conducted ourselves as an actual game company within a team of 5 people by creating a hierarchy or roles and building a development plan
-                                                    with time estimates and milestones. My role involved contributing to the initial story planning and co-developing the logic structure of the game using C# and the Unity Game Engine. 
+                                                    with time estimates and milestones. My role involved contributing to the initial story planning and co-developing the logic structure of the game using C# and the Unity Game Engine.
                                              <!--
                                                     <video width="320" height="240" controls>
                                                          <source src="assets/video/ExploitTeaserTrailer.mp4" type="video/mp4">
- 
+
                                                                 Your browser does not support the video tag.
                                                     </video>
                                              -->
 
                                                 <iframe src="https://drive.google.com/file/d/1wOONE6Uy6lmjdbMS6tHO81SCRMWLvjza/preview" width="640" height="480"></iframe>
-                                              
+
                                                     </p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -125,7 +211,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -135,7 +221,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">OpenGL project</h2>
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">OpenGL Project</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -144,12 +230,12 @@
                                     </div>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">
-                                        This project was part of the second year "Computer Graphics and Image Processing" course at the University of Manchester. 
+                                        This project was part of the second year "Computer Graphics and Image Processing" course at the University of Manchester.
                                         My work consisted in creating the orrery making use of transformations and simple geometrical shapes. Eveything was created in C++, using OpenGL.
-                                                    
+
                                         <video width="320" height="240" controls>
                                         <source src="assets/video/OpenGL2.mp4" type="video/mp4">
- 
+
                                         Your browser does not support the video tag.
                                         </video>
                                     </p>
@@ -170,7 +256,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">OpenGL mini-project</h2>
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">OpenGL Mini-project</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -178,12 +264,12 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">This project was part of the second year "Computer Graphics and Image Processing" course at the University of Manchester. 
+                                    <p class="mb-5">This project was part of the second year "Computer Graphics and Image Processing" course at the University of Manchester.
                                                     My work consisted in implementing the user move - looking around, walking, crouching and jumping. Eveything was created in C++, using OpenGL.
-                                                    
+
                                                         <video width="320" height="240" controls>
                                                             <source src="assets/video/OpenGL1.mp4" type="video/mp4">
- 
+
                                                                 Your browser does not support the video tag.
                                                         </video>
                                                     </p>
@@ -209,12 +295,12 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto">
-                        <p class="pre-wrap lead">Hi! My name is Diana and I am a 3rd year Computer Science student at the University of Manchester. My passion involves making games and I am striving to becoming a professional game developer one day.</p>
+                    <div class="pre-wrap masthead-subheading font-weight-light mb-0">
+                        <p class="pre-wrap lead">Hi! My name is Diana and I am currently in my final year at the University of Manchester, studying Computer Science as part of an integrated masters course. My passion involves making games - I am always trying to grow my set of skills through taking on interesting projects or exploring new ideas.</p>
+                        <p class="pre-wrap lead">In addition to side projects, I gained experience through a 12-months industrial placement in games development as a programming intern.</p>
+
                     </div>
-                    <div class="col-lg-4 mr-auto">
-                        <p class="pre-wrap lead">I am the co-officer of &quot;UniCS Game Dev&quot; at the University of Manchester. We are a student-led team who aims to promote the amazing craft of game making among students.</p>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -254,17 +340,17 @@
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="mb-4">LOCATION</h4>
-                        <p class="pre-wrap lead mb-0">M130ZN, Manchester, UK</p>
+                        <p class="pre-wrap lead mb-0">Manchester, UK</p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/startbootstrap"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/diana-alina-dobrescu/"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
                         <h4 class="mb-4">STUDIES</h4>
                         <p class="pre-wrap lead mb-0"> The University of Manchester, UK
-Computer Science, 3rd year</p>
+Computer Science, 5th year</p>
                     </div>
                 </div>
             </div>
